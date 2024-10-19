@@ -307,6 +307,7 @@ p{
 
 .imp-25-per{
     width: 35%;
+    max-width: 200px;
     /* height: 19.5% !important; */
     height:auto;
   }
