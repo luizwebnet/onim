@@ -14,10 +14,42 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="/onim/css.css">
+    
+    <style>
+      
+      .infoHead{
+         position:fixed;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        /*box-sizing: border-box;*/
+        height:5%;
+        width: 100%;        
+        padding:0 1.5rem;
+        z-index: 99997;
+        overflow: hidden;
+        background: #5f0f40;
+        color: #fff;
+        margin: 0;
+        font-family:  "Roboto", sans-serif;
+        font-size: 12px;
+        text-align: center;
+        box-shadow: 1px 3px rgba(0, 0, 0, .08), 0px 1px 2px rgba(0, 0, 0, .05);
+      }
+      
+      .infoHead p{
+        padding:0.5rem;
+        line-height: 1em !important;
+      }
+    
+    </style>
        
-    </head>
-  <body>
+  </head>
+<body>
     
     <!-- get 1 acess // descontinous
     has-background-danger
@@ -42,9 +74,38 @@
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
     
+  
+  
+  <div class="infoHead">
+
+        <div class="columns is-centered is-mobile">
+  <div class="column is-narrow">
+    <!-- Instagram Link with Icon -->
+    <a href="https://www.instagram.com/onimnutri" target="_blank" class="button is-white">
+      <span class="icon is-medium">
+        <i class="fab fa-instagram"></i>
+      </span>
+      <span>onimnutri</span>
+    </a>
+  </div>
+  <div class="column is-narrow">
+    <!-- Contact Button -->
+    <a href="mailto:falecomonim@gmail.com" class="button is-white is-outlined">
+      <span class="icon is-medium">
+        <i class="fa fa-envelope"></i>
+      </span>
+      <span>falecomonim@gmail.com</span>
+    </a>
+  </div>
+</div>
+
+                        
+      </div> 
+  
+  
     <main class="containerApp" >                                  
            
-      <section class="bodyView">
+      <section class="bodyView mt-5">
                 
           <!-- <div class="inverted-border-radius">  </div> -->
           
@@ -58,18 +119,21 @@
                          
                 <div class="">
                   <figure class="image imp-25-per centerMe">
-                    <img  class="" loading="lazy" data-src="marca.png" data-alt="Marca" class="">
+                    <img  class="" loading="lazy" data-src="onim/marca.png" data-alt="Marca" class="">
                   </figure>
                 </div>
-
+                
+                  
                 <p class="subtitle m-5 has-background-warning">
                   <span class="icon is-small">
                     <i class="fas fa-clipboard-check"></i>
                   </span>
                   Pesquisa de satisfação
                 </p>
+                  
 
-                <form id="formFeedback">                  
+
+                <form  id="formFeedback">                  
                   
                   <p class="mt-5"> Curtiu? </p>
                   
@@ -166,6 +230,11 @@
       </section>       
    
     </main>
+      
+      
+      
+
+      
 
     <script>
 
@@ -265,6 +334,8 @@
 
       if(imagesToLoad.length > 0) for(i=0;i < imagesToLoad.length;i++) auxLoadImages(imagesToLoad[i]);
       
+      
+
 
     </script>
     
